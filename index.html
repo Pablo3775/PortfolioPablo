@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">P.A.B.L.O</div>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="registrar.html">Registro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="saiba-mais.html">Saiba Mais</a></li>
+    </ul>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <main class="inicio-container">
+    <!-- Texto na esquerda -->
+    <div class="bloco-esquerdo">
+      <h1 class="bem-vindo">OLA BEM VINDO</h1>
+      <h1 class="aproveite">AO MEU SITE APROVEITE!</h1>
+    </div>
+
+    <!-- Vídeo grande na direita -->
+    <div class="bloco-direito">
+      <video src="video.mp4" controls></video>
+    </div>
+  </main>
+
+  <!-- Botões de login e registrar -->
+  <section class="popup-buttons">
+    <a href="login.html" class="popup-btn explorar-btn">Para explorar mais, faça login</a>
+    <a href="registrar.html" class="popup-btn registrar-btn">Não tem conta? Registre-se</a>
+  </section>
+
+  <!-- NOVA SEÇÃO DE BOTÕES GRANDES -->
+  <section class="custom-buttons">
+    <div class="button-wrapper">
+      <a href="saiba-mais.html" class="custom-btn"><strong>Saiba mais</strong></a>
+      <p class="descricao">aqui voce podera ver algumas informações sobre o site</p>
+    </div>
+    <div class="button-wrapper">
+      <a href="#" class="custom-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><strong>Voltar para o começo</strong></a>
+      <p class="descricao"><strong>Volte para o começo</strong> pois chegamos ao fim da primeira pagina do site, <a href="login.html">faça login</a> e descubra o resto</p>
+    </div>
+  </section>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
